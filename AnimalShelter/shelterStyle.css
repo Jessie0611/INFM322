@@ -1,0 +1,78 @@
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+div{
+    padding: 1px;
+}
+nav{
+    margin-left: 5px;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropButton{
+    margin-left: 120px;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    color: rgb(32, 113, 233);
+}
+.dropContent{
+    margin-left: 110px;
+    font-size: 13px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    min-width: 180px;
+    box-shadow: 3px 13px 23px 3px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropContent a{
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+  }
+  .dropContent a:hover {
+    color:rgb(32, 113, 233);
+    font-size: 18px;
+}
+.dropdown:hover .dropContent {
+    display: block;
+}
+.dropdown:hover .dropButton {
+    color:rgb(19, 72, 185);
+}
+h1{
+    text-align: center;
+}
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.active {
+  background-color: #a4c1e2;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+}

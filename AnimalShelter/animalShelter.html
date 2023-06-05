@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barks&Recreation</title>
+    <link rel="stylesheet" href="shelterStyle.css">
+</head>
+<header>
+    <nav>
+        <div class="dropdown">
+            <button class="dropButton"> <h3>🐾 PETS</h3> </button>
+                <div class="dropContent">
+                    <a href="#">Adopt</a>
+                    <a href="#">Foster</a>
+                    <a href="#">Cats</a>
+                    <a href="#">Dogs</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropButton"> <h3>RESOURCES</h3> </button>
+            <div class="dropContent">
+                <a href="#">Pet Food Bank</a>
+                <a href="#">Grooming SPAs</a>
+                <a href="#">Pet Day Cares</a>
+                <a href="#">Vaccines & Preventatives</a>
+                <a href="#">Lost & Found Pets</a>
+
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropButton"> <h3>EVENTS</h3> </button>
+                <div class="dropContent">
+                    <a href="#">Event Calander</a>
+                    <a href="#">National Adoption Week</a>
+                    <a href="#">Walk for Treats 2023</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropButton"> <h3>GET INVOLVED</h3> </button>
+                <div class="dropContent">
+                    <a href="#">Ways to volunteer</a>
+                    <a href="#">Group Volunteering</a>
+                    <a href="#">Community Service</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropButton"> <h3>ABOUT US</h3> </button>
+                <div class="dropContent">
+                    <a href="#">Contact Us</a>
+                    <a href="#">Mission</a>
+                    <a href="#">Team Members</a>
+                    <a href="#">Employment</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropButton"> <h3>FAQ</h3> </button>
+                <div class="dropContent">
+                    <a href="#">Adoption FAQ</a>
+                    <a href="#">Clinic FAQ</a>
+                    <a href="#">Volunteering FAQ</a>
+            </div>
+        </div>
+  
+    <div class="dropdown">
+        <button class="dropButton"> <h3> &hearts;DONATE</h3> </button>
+            <div class="dropContent">
+                <a href="#">Ways to give</a>
+                <a href="#">Give Monthly</a>
+                <a href="#">Fundraisers</a>
+        </div>
+    </div>  </nav>
+</head>
+<body>
+    <br>
+<h1> FIND YOUR NEW BEST FRIEND </h1>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="/AnimalShelter/AnimalImages/photo-1445128417616-2f8f1047bb7d.avif" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="/AnimalShelter/AnimalImages/photo-1507682520764-93440a60e9b5.avif" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="/AnimalShelter/AnimalImages/photo-1522276498395-f4f68f7f8454.avif" style="width:100%">
+</div>
+  <div class="mySlides fade">
+    <img src="/AnimalShelter/AnimalImages/photo-1543206890-69843998edd0.avif" style="width:100%">
+  </div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000);
+}
+</script>
+
+
+
+</body>
+</html> 
+
+</body>
+</html>
