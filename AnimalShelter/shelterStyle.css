@@ -6,20 +6,22 @@ div{
 }
 nav{
     margin-left: 5px;
+    display: flex;
+    justify-content: space-around;
 }
 .dropdown{
     position: relative;
     display: inline-block;
 }
 .dropButton{
-    margin-left: 120px;
     padding: 10px;
     font-size: 18px;
     border: none;
     color: rgb(32, 113, 233);
+    background-color: white;
+    cursor: pointer;
 }
 .dropContent{
-    margin-left: 110px;
     font-size: 13px;
     background-color: white;
     display: none;
@@ -37,6 +39,23 @@ nav{
 a{
     text-decoration: none;
   }
+.headerImg{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+.aboutShelter{
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid blue;
+    padding: 20px;
+    border-radius: 20px;
+}
+.fosterP{
+    font-size: 18px;
+    text-align: center;
+}
   .dropContent a:hover {
     color:rgb(32, 113, 233);
     font-size: 18px;
@@ -44,11 +63,18 @@ a{
 .dropdown:hover .dropContent {
     display: block;
 }
-.dropdown:hover .dropButton {
+.dropdown:hover .dropButton:hover {
     color:rgb(19, 72, 185);
 }
 h1{
     text-align: center;
+}
+.socialM{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    margin-left: 80px;
 }
 
 * {box-sizing: border-box;}
