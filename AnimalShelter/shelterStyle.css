@@ -26,7 +26,7 @@ nav{
     background-color: white;
     display: none;
     position: absolute;
-    min-width: 180px;
+    min-width: 195px;
     box-shadow: 3px 13px 23px 3px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
