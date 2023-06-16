@@ -54,9 +54,9 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #715aa7;
+    color: #7f64be;
     text-align: left;
-    background-color: #fff;
+    background-color: rgb(212, 221, 255);
   }
   
   [tabindex="-1"]:focus:not(:focus-visible) {
@@ -231,26 +231,6 @@
     outline: 5px auto -webkit-focus-ring-color;
   }
   
-  input,
-  button,
-  select,
-  optgroup,
-  textarea {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-  }
-  
-  button,
-  input {
-    overflow: visible;
-  }
-  
-  button,
-  select {
-    text-transform: none;
-  }
   
   select {
     word-wrap: normal;
@@ -4356,8 +4336,15 @@
   
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none;
+    color: #117a8b;
   }
-  
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: none;
+    opacity: 75%;
+  }
   .navbar-nav {
     display: -ms-flexbox;
     display: flex;
@@ -6892,7 +6879,9 @@
     border-radius: 50% !important;
     cursor: pointer;
   }
-  
+  .rounded-circle:hover{
+    opacity: 80%;
+  }
   .rounded-pill {
     border-radius: 50rem !important;
   }

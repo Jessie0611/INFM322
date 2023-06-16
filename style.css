@@ -26,11 +26,11 @@ nav{
     margin-left: 110px;
 }
 .dropbtn {
-    margin-left: 10px;
+    margin-left: 20px;
     background-color: #6353bb;
     color: white;
-    padding: 20px;
-    font-size: 16px;
+    padding: 25px;
+    font-size: 18px;
     border: 3px solid black;
     border-radius: 20px;
   }
@@ -44,7 +44,7 @@ nav{
     display: none;
     position: absolute;
     background-color: #6353bb;
-    min-width: 160px;
+    min-width: 190px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 20px;
