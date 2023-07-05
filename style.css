@@ -31,7 +31,7 @@ h1, h2, h4{
 }
 ol, li{
 color: white;
-font-size: 18px;
+font-size: 16px;
 padding: 2px;
 margin-left: 50px;
 }
@@ -40,7 +40,7 @@ margin-left: 50px;
     background-color: #6353bb;
     color: white;
     padding: 25px;
-    font-size: 18px;
+    font-size: 16px;
     border: 3px solid black;
     border-radius: 20px;
   }
@@ -50,7 +50,7 @@ margin-left: 50px;
   }
   .dropdown-content {
     margin-left: 20px;
-    font-size: 14px;
+    font-size: 13px;
     display: none;
     position: absolute;
     background-color: #6353bb;
@@ -87,7 +87,7 @@ margin-left: 50px;
 p{
     color: white;
     margin: 30px;
-    font-size: 18px;
+    font-size: 16px;
 }
 h2{
     color: white;
