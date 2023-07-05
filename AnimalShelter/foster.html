@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barks&Recreation</title>
-    <link rel="stylesheet" href="shelterStyle.css">
+    <link rel="stylesheet" href="foster.css">
 </head>
 <header>
     <nav>
@@ -60,12 +60,61 @@
 </header>
 <body>
     <H1>FOSTER APPLICATION</H1>
-    <h3>Thank you for considering fostering these animals!</h3>
+    <h3>Thank you for considering fostering these pets!</h3>
     <br>
-    <br>
-    <form action="applicatiopn">
-        
-    </form>
+    <h3>Pet Fostering Application</h3>
+
+    <form action="action_page.php" style="border:1px solid #ccc">
+      <div class="form">
+          <hr>
+          <div id="leftbox">
+          <label for="fname">Full Name</label><br>
+          <input type="text" placeholder="* Full Name" name="Full Name" required> <br>
+          <label for="number">Phone Number</label> <br>
+          <input type="text" placeholder="###-###-####" name="Phone Number" required> <br>
+          <label for="email">E-Mail</label> <br>
+          <input type="text" placeholder="* Enter Email" name="email" required> <br>
+
+     <label for="address">Home Address</label> <br>
+          <input type="text" placeholder="* Street Address" name="address" required>
+          <label for="address"></label>
+          <div class="address">
+              <input type="text" placeholder="* City" name="city" required>
+              <label for="address"></label>
+              <input type="text" placeholder="* Zip Code" name="zip" required> <br>
+          </div>
+      
+          <label for="psw"></label>
+          <input type="password" placeholder="* Enter Password" name="psw" required>      <br>
+          <label for="psw-repeat"></label>
+          <input type="password" placeholder="* Repeat Password" name="psw-repeat" required> <br>
+      <br>
+      <br>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me <br>
+      </label>
+  
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+  
+      <div class="clearfix">
+        <button type="button" class="cancelbtn"><a href=foster.html><b>Cancel Application</b></a></button> 
+        <button type="submit" class="submitbtn"><b>Submit Application</b></button>
+      <br></div>
+
+            <div id="rightbox">
+
+                <label for="pet">Pet Type</label>
+                <input type="radio" id="Cats" name="Cats" value="Cats">
+                <label for="Cats">Cats</label>
+                <input type="radio" id="Dogs" name="Dogs" value="Dogs">
+                <label for="Cats">Dogs</label>
+                <input type="radio" id="Either" name="Either" value="Either">
+                <label for="Cats">Either</label>
+                </div>
+            </div>
+          </div>
+      </form>
+
     
 </body>
 <footer> 

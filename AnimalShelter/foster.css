@@ -1,0 +1,197 @@
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+div{
+    padding: 1px;
+}
+ * {box-sizing: border-box}
+
+  input[type=text], input[type=password] {
+  width: 20%;
+  padding: 15px;
+  margin: 2px 0 20px 0;
+  display: inline-block;
+  border: 1px solid rgb(32, 113, 233);
+  border-radius: 30px;
+  background: #f1f1f1;
+}
+.address{
+    width: 45%;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+#leftBox, #rightBox {
+    margin: 60px;
+    width: 700px;   
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(175, 170, 170);
+    border-radius: 10px;
+}
+
+button {
+  background-color: rgb(32, 113, 233);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #ff7a70;
+}
+.submitbtn{
+    background-color: rgb(32, 113, 233);
+}
+
+.cancelbtn, .submitbtn {
+  float: left;
+  width: 10%;
+}
+
+.form {
+  padding: 15px;
+  margin-left: 10%;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 50%;
+  }
+}
+
+nav{
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropButton{
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    color: rgb(32, 113, 233);
+    background-color: white;
+    cursor: pointer;
+}
+.dropContent{
+    font-size: 13px;
+    background-color: white;
+    display: none;
+    position: absolute;
+    min-width: 195px;
+    box-shadow: 3px 13px 23px 3px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropContent a{
+    padding: 10px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+  }
+.headerImg{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+.aboutShelter{
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid blue;
+    padding: 20px;
+    border-radius: 20px;
+}
+.fosterP{
+    font-size: 18px;
+    text-align: center;
+}
+  .dropContent a:hover {
+    color:rgb(32, 113, 233);
+    font-size: 18px;
+}
+.dropdown:hover .dropContent {
+    display: block;
+}
+.dropdown:hover .dropButton:hover {
+    color:rgb(19, 72, 185);
+}
+h1{
+    text-align: center;
+    color: rgb(19, 72, 185);
+}
+h3{
+    text-align: center;
+    color:rgb(32, 113, 233);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    border: 2px solid rgb(103, 103, 255);
+    background-color: rgb(184, 205, 250);
+}
+.row{
+  padding: 20px;
+}
+.socialM{
+    display: flex;
+    justify-content: center;
+}
+footer{
+    margin-left: 80px;
+}
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.active {
+  background-color: #a4c1e2;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+}
