@@ -6,9 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jessie in INFM322</title>
     <link rel="stylesheet" a href="../style.css">
+    <style>
+        * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.indexSlide {display: none}
+img {vertical-align: middle;}
+.slideshow {
+  max-width: 1800px;
+  position: relative;
+  margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -20px;
+  color: white;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(49, 54, 65, 0.8);
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 16px;
+  padding: 3px 6px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #545ee2;
+  border-radius: 40%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #000000;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 220px) {
+  .prev, .next,.text {font-size: 20px}
+}
+    </style>
 </head>
 <header>
-  <div class="butterFly"><a href="index.html" title="Home"><img src="../butterfly.png" height="110px"></a></div>
+  <div class="butterFly"><a href="../index.html" title="Home"><img src="../butterfly.png" height="110px"></a></div>
 <nav>
 
     <div class="dropdown">
@@ -38,8 +98,70 @@
 </header>
 <body>
     <h2>Week Two Reflection</h2>
+<h2>What I think About My Home Page</h2>
+<p>I think my index page has an aesteically pleasing cool-toned color scheme that is perfect for summer because it makes me think of swimming. I added some personal effects to my logo, it is a butterfly with a hover-tilt effect to appear to "fly back home" to the index page. I have a butterfly tattoo on my arm that is half winged-half a bed of flowers, I got this tattoo six years ago in memory of my mother after she passed. I also added a photo slideshow with three different selfies. I think slideshows are a nice addition to the page so that it doesn't seem so plain. </p>
+<p>I have included my GitHub link in the navigation bar, along with a dropdown menu for the lab projects and another drop down menu containing the weekly reflections.</p>
+<h2>How can it be improved?</h2>
+<p>I think I could have done a better job with the logo. I personally love it but people may not realize that it is a link back to my home page. I also could have made a better self description but I never know what to say about myself in these things.</p>
 
+<h2>Index Screenshots:</h2>
+<div class="slideshow">
+    <div class="indexSlide">
+      <div class="numbertext">1 / 4</div>
+      <img src="/Reflections/Photos/home1.png" style="width:100%">
+    </div>
     
+    <div class="indexSlide">
+      <div class="numbertext">2 / 4</div>
+      <img src="/Reflections/Photos/home2.png" style="width:100%">
+    </div>
+    <div class="indexSlide">
+      <div class="numbertext">3 / 4</div>
+      <img src="/Reflections/Photos/home3.png" style="width:100%">
+    </div>
+    <div class="indexSlide">
+        <div class="numbertext">4 / 4</div>
+        <img src="/Reflections/Photos/home4.png" style="width:100%">
+      </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+<div style="text-align:center">
+<span class="dot" onclick="currentSlide(1)"></span> 
+<span class="dot" onclick="currentSlide(2)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span> 
+<span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("indexSlide");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
     
           
     <div class="footer">
