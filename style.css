@@ -25,6 +25,15 @@ body{
 nav{
     margin-left: 120px;
 }
+h1, h2, h3, h4{
+  color: white;
+  margin-left: 30px;
+}
+ol, li{
+color: white;
+padding: 2px;
+margin-left: 50px;
+}
 .dropbtn {
     margin-left: 20px;
     background-color: #6353bb;
