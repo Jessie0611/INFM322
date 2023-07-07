@@ -22,6 +22,26 @@ body{
 .butterFly:hover {
     transform: rotate(-30deg);
 }
+.W4content{
+  width: 1000px;
+}
+.w4Main{
+  display: flex;
+  flex-direction: row;
+
+}
+.w4photo{
+  opacity: 90%;
+}
+.w4photo:hover{
+  opacity: 80%;
+  transform:rotate(10deg);
+}
+.w5content{
+  margin-left: 20px;
+  width: 80%;
+}
+
 nav{
     margin-left: 120px;
 }
