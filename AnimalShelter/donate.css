@@ -1,0 +1,20 @@
+.form {
+    margin: 40px;
+    padding: 5px;
+    border: 1px solid dodgerblue;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(32, 113, 233);
+    border-radius: 30px;
+    background: #f1f1f1;
+}
+label{
+    padding: 10px;
+}
