@@ -25,27 +25,24 @@
             <button class="dropButton"> <h3>RESOURCES</h3> </button>
             <div class="dropContent">
                 <a href="#">Pet Food Bank</a>
-                <a href="#">Grooming SPAs</a>
                 <a href="#">Pet Day Cares</a>
                 <a href="#">Vaccines & Preventatives</a>
-                <a href="#">Lost & Found Pets</a>
+
 
             </div>
         </div>
         <div class="dropdown">
             <button class="dropButton"> <h3>EVENTS</h3> </button>
                 <div class="dropContent">
-                    <a href="events.html">Event Calander</a>
-                    <a href="#">National Adoption Week</a>
-                    <a href="#">Walk for Treats 2023</a>
+                    <a href="events.html">Event Calendar</a>
+  
             </div>
         </div>
         <div class="dropdown">
             <button class="dropButton"> <h3>GET INVOLVED</h3> </button>
                 <div class="dropContent">
                     <a href="#">Ways to volunteer</a>
-                    <a href="#">Group Volunteering</a>
-                    <a href="#">Community Service</a>
+  
             </div>
         </div>
         </div>        </div>
@@ -64,64 +61,63 @@
     <br>
     <h3>Pet Fostering Application</h3>
 
-    <form action="action_page.php" style="border:1px solid #ccc">
-      <div class="form">
-          <hr>
-          <div id="leftbox">
-          <label for="fname">Full Name</label><br>
-          <input type="text" placeholder="* Full Name" name="Full Name" required> <br>
-          <label for="number">Phone Number</label> <br>
-          <input type="text" placeholder="###-###-####" name="Phone Number" required> <br>
-          <label for="email">E-Mail</label> <br>
-          <input type="text" placeholder="* Enter Email" name="email" required> <br>
+    <div class="form">
+        <div id="leftbox">
+          <label for="fname">Full Name
+          <input type="text" placeholder="* Full Name" name="Full Name" required>
+            </label>
+          <label for="number">Phone Number
+            <input type="text" placeholder="###-###-####" name="Phone Number" required>
+          </label>
+          
+          <label for="email">E-Mail</label>
+          <input type="text" placeholder="* Enter Email" name="email" required></label>
 
-     <label for="address">Home Address</label> <br>
+         <label for="address">Home Address
           <input type="text" placeholder="* Street Address" name="address" required>
           <label for="address"></label>
           <div class="address">
               <input type="text" placeholder="* City" name="city" required>
               <label for="address"></label>
-              <input type="text" placeholder="* Zip Code" name="zip" required> <br>
-          </div>
+              <input type="text" placeholder="* Zip Code" name="zip" required></label>
+        </div>
       
-          <label for="psw"></label>
-          <input type="password" placeholder="* Enter Password" name="psw" required>      <br>
-          <label for="psw-repeat"></label>
-          <input type="password" placeholder="* Repeat Password" name="psw-repeat" required> <br>
-      <br>
-      <br>
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me <br>
-      </label>
-  
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-  
-      <div class="clearfix">
-        <button type="button" class="cancelbtn"><a href=foster.html><b>Cancel Application</b></a></button> 
-        <button type="submit" class="submitbtn"><b>Submit Application</b></button>
-      <br></div>
+          <label for="psw">Password
+          <input type="password" placeholder="* Enter Password" name="psw" required>     
+          <label for="psw-repeat">
+          <input type="password" placeholder="* Repeat Password" name="psw-repeat" required> </label>
+    </div>
 
-            <div id="rightbox">
+       <div id="rightbox">
 
-                <label for="pet">Pet Type</label>
-                <input type="radio" id="Cats" name="Cats" value="Cats">
-                <label for="Cats">Cats</label>
-                <input type="radio" id="Dogs" name="Dogs" value="Dogs">
-                <label for="Cats">Dogs</label>
-                <input type="radio" id="Either" name="Either" value="Either">
-                <label for="Cats">Either</label>
+            <label for="pet"><u>Foster Pet Type</u></label>
+            <br>
+           <div class="radioB">
+               <input type="radio" id="Cats" name="Pet" value="Cats">Cats
+               <input type="radio" id="Dogs" name="Pet" value="Dogs"> Dogs
+               <input type="radio" id="Either" name="Pet" value="Either">Either
+           </div>
+            
+            <label for="Current">Current Pets?
+                <input type="comment" placeholder="Comment">
+            </label>
+       </div>
+            <div class="formBottom"> 
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+          <div class="clearfix">            <button type="button" class="cancelbtn"><a class="ButtonLink" href=foster.html><b>Cancel Application</b></a></button>
+            <button type="submit" class="submitbtn"><b>Submit Application</b></button>
+          <br></div>
                 </div>
-            </div>
-          </div>
-      </form>
+      </div>
+
 
     
 </body>
 <footer> 
-    <button class="dropButton"> &nbsp; <h3>ABOUT US</h3> </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <button class="dropButton"> &nbsp;<h3>FAQ</h3> </button>
-    <br>
-    <br>
+    <div class="dropButton"> &nbsp; <h3>ABOUT US</h3> </div> &nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="dropButton"> &nbsp;<h3>FAQ</h3> </div>     <br> </footer>
+
     <br>
     <br>
     <a href="../index.html"> &nbsp; &copy; Jessica Battles &nbsp; | &nbsp; INFM322 &nbsp; | &nbsp; Summer 2023 &nbsp; | BACK TO PORTFOLIO </a>
@@ -129,6 +125,6 @@
   <br>
   <br>
   
-  </footer>
+
   </body>
   </html>
