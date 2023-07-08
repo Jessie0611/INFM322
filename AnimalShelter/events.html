@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barks&Recreation</title>
     <link rel="stylesheet" href="shelterStyle.css">
+    <link rel="stylesheet" href="events.css">
 </head>
 <header>
     <nav>
@@ -55,6 +56,67 @@
 </header>
 <body>
     <h1>EVENT CALENDAR</h1>
+    <h3>WE HAVE SUMMER FUN THIS MONTH!</h3>
+
+    <div class="month">      
+        <ul>
+          <li class="prev">&#10094;</li>
+          <li class="next">&#10095;</li>
+          <li>
+            August<br>
+            <span style="font-size:18px">2023</span>
+          </li>
+        </ul>
+      </div>
+      
+      <ul class="weekdays">
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        <li>Su</li>
+      </ul>
+      
+      <ul class="days">  
+        <li ></li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li><span class="active" id="walk">5</span></li>
+        <li>6</li>
+        <li>7</li>   
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li><span class="active" id="swim">12</span></li>
+        <li><span class="active" id="swimsun">13</span></li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li><span class="active" id="groom">26</span></li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+      </ul>
+      <p id="dateInfo"></p>
+
+      </div>
+      <br>
 </body>
 <footer> 
     <button class="dropButton"> &nbsp; <h3>ABOUT US</h3> </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -69,5 +131,7 @@
   <br>
   
   </footer>
+
+  <script src="events.js"></script>
   </body>
   </html>

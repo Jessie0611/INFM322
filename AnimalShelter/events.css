@@ -1,0 +1,99 @@
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+.month {
+  padding: 80px 45px;
+  width: 100%;
+  background: rgb(32, 113, 233);
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 15px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 15px;
+
+}
+
+.weekdays {
+  margin: 0;
+  padding: 30px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: rgb(88, 88, 88);
+  text-align: center;
+
+}
+
+.days {
+  padding: 15px 25px 25px 20px;
+  background: #eee;
+  margin: 2px;
+  border: 2px solid rgb(81, 130, 238);
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size:15px;
+  color: rgb(80, 80, 80);
+}
+
+.days li .active {
+  padding: 10px;
+  cursor: pointer;
+  background: rgb(81, 130, 238);
+  color: white !important
+}
+#dateInfo{
+color: rgb(19, 72, 185);
+text-align: center;
+font-size: 25px;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
