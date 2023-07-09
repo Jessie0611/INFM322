@@ -11,10 +11,10 @@
 </head>
 <header>
     <nav>
-        <div class="dropdown">
-            <button class="dropButton"> <a href="animalShelter.html"> <h3>🐾 HOME</h3></a> </button>
-          </div>
-    
+      <div class="dropdown">
+        <button class="dropButton"> <a href="animalShelter.html"> <h3>🐾 HOME</h3></a> </button>
+      </div>
+
         <div class="dropdown">
             <button class="dropButton"> <h3>PETS</h3> </button>
                 <div class="dropContent">
@@ -27,8 +27,7 @@
             <button class="dropButton"> <h3>RESOURCES</h3> </button>
             <div class="dropContent">
                 <a href="#">Pet Food Bank</a>
-                <a href="#">Grooming SPAs</a>
-                <a href="#">Vaccines & Preventatives</a>
+               <a href="#">Vaccines/Preventatives</a>
 
             </div>
         </div>
@@ -58,25 +57,37 @@
 </header>
 <body>
     <H1>DONATE </H1>
+    <h3>Barks&Recreation is a private, not-for-profit, 501(c)3 charitable organization. We do not receive funding from federal, state or county governments. 
+        <br>
+        The services we offer to the community are made possible ONLY by the thoughtful generosity of supporters such as YOU.
+        <br>
+        You will receive a letter for your tax-deductible gift.</h3>
+
+        <h3>You may also donate any pet food or supplies at our physical location during business hours and events!</h3>
     <div class="form">
 
           <label for="fname">Full Name 
           <input type="text" placeholder="* Full Name" name="Full Name" required></label>
 
           <label for="phonenumber">Phone Number 
-            <input type="text" placeholder="###-###-####" name="Phone Number" required>
+            <input type="number" placeholder="###-###-####" name="Phone Number" required>
           </label>
 
           <label for="email">E-Mail 
           <input type="text" placeholder="* Enter Email" name="email" required></label>
 
+          <label for="phonenumber">Amount $<input type="number" placeholder="$0.00" name="Amount" required>
+          </label>
+
          <label for="payment"> CARD NUMBER 
-            <input type="text" placeholder="####-####-####-####" name="address" required></label>
+            <input type="number" placeholder="####-####-####-####" name="address" required></label>
 
             <label for="payment">RE-ENTER CARD NUMBER 
-            <input type="text" placeholder="####-####-####-####" name="address" required>
+            <input type="number" placeholder="####-####-####-####" name="address" required>
             <label for="address"></label>
            <a href="paypal.com"><img src="/AnimalShelter/AnimalImages/payment-buttons.png" width="200px" height="180px"></a>
+           <br>
+           <div class="submitButton"><b> <a href="submitpayment.html">Submit Payment</a></b></div>
     </div>
     
     
@@ -84,8 +95,6 @@
 <footer> 
     <button class="dropButton"> &nbsp; <h3>ABOUT US</h3> </button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button class="dropButton"> &nbsp;<h3>FAQ</h3> </button>
-    <br>
-    <br>
     <br>
     <br>
     <a href="../index.html"> &nbsp; &copy; Jessica Battles &nbsp; | &nbsp; INFM322 &nbsp; | &nbsp; Summer 2023 &nbsp; | BACK TO PORTFOLIO </a>

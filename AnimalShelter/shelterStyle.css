@@ -39,6 +39,12 @@ nav{
 a{
     text-decoration: none;
   }
+  button:hover{
+    opacity: 80%;
+  }
+  a:visited{
+    text-decoration: none;
+  }
 .headerImg{
     display: flex;
     justify-content: center;
