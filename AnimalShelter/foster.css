@@ -16,9 +16,6 @@ html{
 .address{
     width: 80%;
 }
-img{
-  width: 500px;
-}
 .Thankyouimage{
   display: flex;
   justify-content: center;
@@ -84,11 +81,8 @@ body{
 button {
   background-color: rgb(107, 165, 253);
   color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 100%;
   opacity: 0.9;
 }
 
@@ -125,17 +119,7 @@ nav{
     display: flex;
     justify-content: space-around;
 }
-.dropdown{
-    position: relative;
-    display: inline-block;
-}
-.dropButton{
-    padding: 10px;
-    font-size: 18px;
-    border: none;
-    color: rgb(32, 113, 233);
-    background-color: white;
-    cursor: pointer;
+
 }
 .dropContent{
     font-size: 13px;
